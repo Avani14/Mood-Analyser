@@ -13,16 +13,16 @@ class MoodAnalyserTest {
     @BeforeEach
     public void setUp()
     {
-        object = new MoodAnalyser();
+        object = new MoodAnalyser("");
     }
     @Test
     public void moodAnalyser() {
         try {
-            //Test Case 3.1
+            //Test Case 3.2
             ExpectedException e =  ExpectedException.none();
             object.moodAnalyser();
         } catch (MoodAnalyserException e) {
-            Assertions.assertEquals(MoodAnalyserException.ExceptionType.NULL,e.type);
+            Assertions.assertEquals(MoodAnalyserException.ExceptionType.EMPTY,e.type);
         }
     }
 }
