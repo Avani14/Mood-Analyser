@@ -11,12 +11,12 @@ class MoodAnalyserTest {
     @BeforeEach
     public void setUp()
     {
-        object = new MoodAnalyser("This is a happy message");
+        object = new MoodAnalyser("I am in Sad mood");
     }
     @Test
     public void moodAnalyser()
     {
         String ans = object.moodAnalyser();
-        Assertions.assertEquals("HAPPY",ans);
+        Assertions.assertEquals("SAD",ans);
     }
 }
