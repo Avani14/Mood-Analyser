@@ -18,7 +18,7 @@ class MoodAnalyserTest {
     @Test
     public void moodAnalyser() {
         try {
-            //Test Case 3.1
+            //Test Case 3.2
             ExpectedException e =  ExpectedException.none();
             object.moodAnalyser();
         } catch (MoodAnalyserException e) {
