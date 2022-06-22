@@ -16,6 +16,7 @@ class MoodAnalyserTest {
     @Test
     public void moodAnalyser()
     {
+        //Test case 2.1:
         String ans = object.moodAnalyser();
         Assertions.assertEquals("HAPPY",ans);
     }
